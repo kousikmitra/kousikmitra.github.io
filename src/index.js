@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './assets/scss/desktop.scss'
+// import './assets/scss/custom-bootstrap.scss'
 import * as serviceWorker from './serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import App from './App';
+
+library.add(fab, faDatabase)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
